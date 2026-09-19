@@ -10,7 +10,17 @@ elif compgen -G "build/chunks/*.hex" > /dev/null; then
     echo "Need 24 hex chunks, have $n" >&2
     exit 1
   fi
-  cat $(ls build/chunks/*.hex | sort) | xxd -r -p > "$TMP"
+  python3 - "$TMP" <<'PY'
+import pathlib, sys
+out = pathlib.Path(sys.argv[1])
+chunks = sorted(pathlib.Path("build/chunks").glob("*.hex"))
+hexdata = "".join(p.read_text().split() for p in chunks)
+# join of generator of lists is wrong in py - fix:
+hexdata = "".join("".join(p.read_text().split()) for p in chunks)
+data = bytes.fromhex(hexdata)
+out.write_bytes(data)
+print(f"Decoded {len(chunks)} chunks -> {len(data)} bytes")
+PY
 else
   echo "No PDF sources" >&2
   exit 1
