@@ -26,10 +26,10 @@
       <h1>Pagamento confirmado 🎉</h1>
       <p>Obrigado por comprares o e-book <strong>IA prática para freelancers e PMEs portuguesas</strong>.</p>
       <p>
-        <a class="btn" id="primary" href="./ebook-ia-pratica.pdf" download="IA-pratica-Modo-Produtivo.pdf">Descarregar PDF agora</a>
-        <a class="btn secondary" href="https://drive.google.com/uc?export=download&amp;id=1ncHxkB0ahnwh_vZVzxoadOszbcEYmrzT">Cópia de segurança (Drive)</a>
+        <a class="btn" id="primary" href="https://drive.google.com/uc?export=download&amp;id=1ncHxkB0ahnwh_vZVzxoadOszbcEYmrzT">Descarregar PDF agora</a>
+        <a class="btn secondary" id="mirror" href="./ebook-ia-pratica.pdf" download="IA-pratica-Modo-Produtivo.pdf">Espelho no site</a>
       </p>
-      <p class="muted">Se o download não começar, usa a cópia de segurança no Google Drive.</p>
+      <p class="muted">O download principal vem do Google Drive (cópia completa). O espelho no site activa-se automaticamente quando o PDF CDN estiver completo (≥90&nbsp;KB).</p>
       <ol class="steps muted">
         <li>Guarda o PDF no telemóvel ou computador.</li>
         <li>Em breve recebes também um e-mail com o mesmo link (e o recibo Stripe).</li>
@@ -39,15 +39,19 @@
   </div>
   <script>
   (function () {
-    var a = document.getElementById('primary');
+    var primary = document.getElementById('primary');
+    var mirror = document.getElementById('mirror');
+    var drive = 'https://drive.google.com/uc?export=download&id=1ncHxkB0ahnwh_vZVzxoadOszbcEYmrzT';
     fetch('./ebook-ia-pratica.pdf', { method: 'HEAD' }).then(function (r) {
       var len = parseInt(r.headers.get('content-length') || '0', 10);
-      if (!r.ok || len < 1000) {
-        a.href = 'https://drive.google.com/uc?export=download&id=1ncHxkB0ahnwh_vZVzxoadOszbcEYmrzT';
-        a.removeAttribute('download');
+      if (r.ok && len >= 90000) {
+        primary.href = './ebook-ia-pratica.pdf';
+        primary.setAttribute('download', 'IA-pratica-Modo-Produtivo.pdf');
+        mirror.href = drive;
+        mirror.textContent = 'Cópia de segurança (Drive)';
       }
     }).catch(function () {});
-    setTimeout(function () { a.click(); }, 500);
+    setTimeout(function () { primary.click(); }, 600);
   })();
   </script>
 </body>
