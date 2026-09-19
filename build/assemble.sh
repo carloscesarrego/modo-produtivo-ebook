@@ -1,7 +1,20 @@
 #!/usr/bin/env bash
 set -euo pipefail
-# Assemble PDF from hex chunks (xxd -r -p)
-cat build/chunks/*.hex | xxd -r -p > ebook-ia-pratica.pdf
-ls -la ebook-ia-pratica.pdf
-file ebook-ia-pratica.pdf
-python3 -c "d=open('ebook-ia-pratica.pdf','rb').read(5); assert d==b'%PDF-', d"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
+
+OUT="ebook-ia-pratica.pdf"
+TMP="$(mktemp)"
+
+if compgen -G "build/ascii/*.part" > /dev/null; then
+  cat $(ls build/ascii/*.part | sort) > "$TMP"
+elif compgen -G "build/chunks/*.hex" > /dev/null; then
+  cat $(ls build/chunks/*.hex | sort) | xxd -r -p > "$TMP"
+else
+  echo "No PDF sources found" >&2
+  exit 1
+fi
+
+head -c 5 "$TMP" | grep -q '%PDF-' || { echo "Invalid PDF magic" >&2; exit 1; }
+mv "$TMP" "$OUT"
+echo "Wrote $OUT ($(wc -c < "$OUT") bytes)"
