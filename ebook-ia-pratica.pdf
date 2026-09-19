@@ -366,7 +366,151 @@ endobj
 endobj
 44 0 obj
 <<
-/Dest [ 7 0 R /Fit ] /Next 45 0 R /Parent 42 0 R /Prev 43 0 R /Title (Casos de uso realistas em P5110 00000 n 
+/Dest [ 7 0 R /Fit ] /Next 45 0 R /Parent 42 0 R /Prev 43 0 R /Title (Casos de uso realistas em Portugal)
+>>
+endobj
+45 0 obj
+<<
+/Dest [ 7 0 R /Fit ] /Next 46 0 R /Parent 42 0 R /Prev 44 0 R /Title (Limites honestos \(para n\343o perderes tempo nem credibilidade\))
+>>
+endobj
+46 0 obj
+<<
+/Count -2 /Dest [ 8 0 R /Fit ] /First 47 0 R /Last 48 0 R /Next 49 0 R /Parent 42 0 R 
+  /Prev 45 0 R /Title (Riscos RGPD e AI Act em termos pr\341ticos)
+>>
+endobj
+47 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Next 48 0 R /Parent 46 0 R /Title (O que N\303O meter no chat)
+>>
+endobj
+48 0 obj
+<<
+/Dest [ 8 0 R /Fit ] /Parent 46 0 R /Prev 47 0 R /Title (Alternativa segura \(o que fazer em vez disso\))
+>>
+endobj
+49 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 50 0 R /Parent 42 0 R /Prev 46 0 R /Title (Como escolher 1\2052 vit\363rias r\341pidas esta semana)
+>>
+endobj
+50 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 51 0 R /Parent 42 0 R /Prev 49 0 R /Title (O mito do \253n\343o \351 para o meu setor\273)
+>>
+endobj
+51 0 obj
+<<
+/Dest [ 9 0 R /Fit ] /Next 52 0 R /Parent 42 0 R /Prev 50 0 R /Title (Mini-casos de \253vit\363ria em 48 horas\273)
+>>
+endobj
+52 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Next 53 0 R /Parent 42 0 R /Prev 51 0 R /Title (Como falar de IA com o teu cliente \(sem drama\))
+>>
+endobj
+53 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Parent 42 0 R /Prev 52 0 R /Title (Exerc\355cio de mapeamento de processos \(30 min\))
+>>
+endobj
+54 0 obj
+<<
+/Count -11 /Dest [ 10 0 R /Fit ] /First 55 0 R /Last 71 0 R /Next 72 0 R /Parent 39 0 R 
+  /Prev 42 0 R /Title (Cap\355tulo 2 \204 Prompts que vendem e poupam tempo)
+>>
+endobj
+55 0 obj
+<<
+/Dest [ 10 0 R /Fit ] /Next 56 0 R /Parent 54 0 R /Title (A f\363rmula pr\341tica \(PT-PT\))
+>>
+endobj
+56 0 obj
+<<
+/Count -6 /Dest [ 12 0 R /Fit ] /First 57 0 R /Last 62 0 R /Next 63 0 R /Parent 54 0 R 
+  /Prev 55 0 R /Title (Templates prontos a copiar)
+>>
+endobj
+57 0 obj
+<<
+/Dest [ 12 0 R /Fit ] /Next 58 0 R /Parent 56 0 R /Title (Template A \204 E-mail comercial \(primeiro contacto\))
+>>
+endobj
+58 0 obj
+<<
+/Dest [ 12 0 R /Fit ] /Next 59 0 R /Parent 56 0 R /Prev 57 0 R /Title (Template B \204 Proposta comercial \(estrutura\))
+>>
+endobj
+59 0 obj
+<<
+/Dest [ 13 0 R /Fit ] /Next 60 0 R /Parent 56 0 R /Prev 58 0 R /Title (Template C \204 Posts para redes sociais \(lote semanal\))
+>>
+endobj
+60 0 obj
+<<
+/Dest [ 13 0 R /Fit ] /Next 61 0 R /Parent 56 0 R /Prev 59 0 R /Title (Template D \204 Or\347amento / pacotes)
+>>
+endobj
+61 0 obj
+<<
+/Dest [ 14 0 R /Fit ] /Next 62 0 R /Parent 56 0 R /Prev 60 0 R /Title (Template E \204 Atendimento ao cliente \(resposta padr\343o\))
+>>
+endobj
+62 0 obj
+<<
+/Dest [ 14 0 R /Fit ] /Parent 56 0 R /Prev 61 0 R /Title (Template F \204 Follow-up \(sil\352ncio depois da proposta\))
+>>
+endobj
+63 0 obj
+<<
+/Dest [ 14 0 R /Fit ] /Next 64 0 R /Parent 54 0 R /Prev 56 0 R /Title (Variantes leves por setor)
+>>
+endobj
+64 0 obj
+<<
+/Dest [ 15 0 R /Fit ] /Next 65 0 R /Parent 54 0 R /Prev 63 0 R /Title (Como iterar um prompt mau at\351 ficar bom)
+>>
+endobj
+65 0 obj
+<<
+/Dest [ 15 0 R /Fit ] /Next 66 0 R /Parent 54 0 R /Prev 64 0 R /Title (Biblioteca de micro-prompts \(cola e adapta\))
+>>
+endobj
+66 0 obj
+<<
+/Dest [ 16 0 R /Fit ] /Next 67 0 R /Parent 54 0 R /Prev 65 0 R /Title (Exemplo antes/depois \204 post LinkedIn)
+>>
+endobj
+67 0 obj
+<<
+/Dest [ 16 0 R /Fit ] /Next 68 0 R /Parent 54 0 R /Prev 66 0 R /Title (Exemplo antes/depois \204 proposta)
+>>
+endobj
+68 0 obj
+<<
+/Dest [ 16 0 R /Fit ] /Next 69 0 R /Parent 54 0 R /Prev 67 0 R /Title (Erros cl\341ssicos de prompt \(e como corrigir\))
+>>
+endobj
+69 0 obj
+<<
+/Dest [ 17 0 R /Fit ] /Next 70 0 R /Parent 54 0 R /Prev 68 0 R /Title (Template G \204 Sequ\352ncia de 3 e-mails \(nutri\347\343o leve\))
+>>
+endobj
+70 0 obj
+<<
+/Dest [ 17 0 R /Fit ] /Next 71 0 R /Parent 54 0 R /Prev 69 0 R /Title (Template H \204 Descri\347\343o de servi\347o para site)
+>>
+endobj
+71 0 obj
+<<
+/Dest [ 17 0 R /Fit ] /Parent 54 0 R /Prev 70 0 R /Title (Template I \204 Resposta a pedido de desconto)
+>>
+endobj
+72 0 obj
+<<
+/Count -10 /Dest [ 17 0 R /Fit ] /First 73 0 R /Last 87 0 R /Next 88 0 R /Parent 39 0 R 
+  /Prev 54 0 R /Title (Cap\355tulo 3 \204 5110 00000 n 
 0000015242 00000 n 
 0000015350 00000 n 
 0000015475 00000 n 
