@@ -1,0 +1,23 @@
+name: Assemble PDF
+on:
+  push:
+    paths:
+      - 'build/chunks/**'
+      - 'build/assemble.sh'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble PDF from hex chunks
+        run: bash build/assemble.sh
+      - name: Commit PDF if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add ebook-ia-pratica.pdf
+          git diff --staged --quiet || git commit -m "Add ebook PDF for customer download"
+          git push
